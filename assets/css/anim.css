@@ -1,0 +1,324 @@
+/* ##################################################################### */
+/* #                                                                   # */
+/* #                  ANIMATIONS WITHOUT JAVASCRIPT                    # */
+/* #                              v.0.2                                # */
+/* #                        By Jorge Rodríguez                         # */
+/* #                                                                   # */
+/* #        PRODIGY SOLUTIONS SL https://prodigysolutions.es           # */
+/* #                                                                   # */
+/* ##################################################################### */
+
+
+/* ########################### INIT FOR ANIMATION ###################### */
+
+.init-transparent {
+    opacity: 0;
+}
+
+.init-zero-scale {
+    transform: scale(0,0);
+}
+
+.init-moved-down {
+    transform: translateY(100px);
+}
+
+.init-moved-up {
+    transform: translateY(-100px);
+}
+
+.init-moved-left {
+    transform: translateX(-110vw);  
+}
+
+.init-invisible {
+    display: none;
+}
+
+/* ############################# SPEED CONTROL ######################### */
+
+.anim-duration-fast {
+        animation-duration: .5s;
+}
+
+.anim-duration-normal {
+        animation-duration: 1s;
+}
+
+.anim-duration-double {
+        animation-duration: 2s;
+}
+
+.anim-duration-slow {
+        animation-duration: 3s;
+}
+
+.anim-forwards {
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.anim-backwards {
+    animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
+}
+
+.anim-reverse {
+    animation: alternate;
+}
+
+
+/* ############################# ANIMATION DELAYS ######################## */
+
+.anim-delay-0_5s {
+    animation-delay: .5s;
+}
+
+.anim-delay-1s {
+    animation-delay: 1s;
+}
+
+.anim-delay-1_5s {
+    animation-delay: 1.5s;
+}
+
+.anim-delay-2s {
+    animation-delay: 2s;
+}
+
+.anim-delay-2_5s {
+    animation-delay: 2.5s;
+}
+
+.anim-delay-3s {
+    animation-delay: 3s;
+}
+
+.anim-delay-3_5s {
+    animation-delay: 3.5s;
+}
+
+.anim-delay-4s {
+    animation-delay: 4s;
+}
+
+.anim-delay-4_5s {
+    animation-delay: 4.5s;
+}
+
+.anim-delay-5s {
+    animation-delay: 5s;
+}
+
+.anim-delay-5_5s {
+    animation-delay: 5,5s;
+}
+
+.anim-delay-6s {
+    animation-delay: 6s;
+}
+
+/* ############################# ANIMATION TYPES ######################## */
+
+.anim-slide-in-ltr {
+        animation-name: slide-in-ltr;
+}
+
+.anim-slide-in-rtl {
+    animation-name: slide-in-rtl;
+}
+
+.anim-slide-left-in {
+    animation-name: slide-left-in;    
+}
+
+.anim-slide-left-out {
+    animation-name: slide-left-out;    
+}
+
+.anim-fade-in {
+        animation-name: fade-in;
+}
+
+.anim-fade-out {
+        animation-name: fade-out;
+}
+
+.anim-pop-in {
+        animation-name: pop-in;
+}
+
+.anim-pop-out {
+        animation-name: pop-out;
+}
+
+.anim-zoom-out {
+    animation-name: zoom-out;
+}
+
+.anim-zoom-in {
+    animation-name: zoom-in;
+}
+
+.anim-up-in {
+    animation-name: up-in;
+}
+
+.anim-down-in {
+    animation-name: down-in;
+}
+
+.anim-pulse {
+	background: rgba(0,0,0,0);
+	border-radius: 50%;
+	height: 48px;
+	width: 48px;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+
+/* ################################# FRAMES ############################# */
+
+@keyframes slide-in-ltr {
+    from {
+        margin-left: 100%;
+        width: 200%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+@keyframes slide-in-rtl {
+    from {
+        margin-left: -100%;
+        width: 200%;
+    }
+  
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slide-left-in {
+    from {
+        transform: translateX(-100vw);
+    }
+  
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-left-out {
+    from {
+        transform: translateX(0px);
+    }
+  
+    to {
+        transform: translateX(-110vw);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity:0;
+    }
+}
+
+@keyframes pop-in {
+    from {
+        transform: scale(0,0);
+    }
+  
+    to {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes pop-out {
+    from {
+        transform: scale(1,1);
+    }
+  
+    to {
+        transform: scale(0,0);
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(1.2,1.2);
+    }
+  
+    to {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(1,1);
+    }
+  
+    to {
+        transform: scale(1.2,1.2);
+    }
+}
+
+@keyframes up-in {
+    from {
+        transform: translateY(100px);
+    }
+  
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes down-in {
+    from {
+        transform: translateY(-100px);
+    }
+  
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.90);
+		box-shadow: 0 0 0 0 rgba(120, 120, 255, 1);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 48px rgba(120, 120, 255, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(120, 120, 255, 0);
+	}
+}

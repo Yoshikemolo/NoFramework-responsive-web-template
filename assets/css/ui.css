@@ -1,0 +1,243 @@
+/* ##################################################################### */
+/* #                                                                   # */
+/* #           RESPONSIVE USER INERFACE WITHOUT JAVASCRIPT             # */
+/* #                              v.0.2                                # */
+/* #                        By Jorge Rodríguez                         # */
+/* #                                                                   # */
+/* #        PRODIGY SOLUTIONS SL https://prodigysolutions.es           # */
+/* #                                                                   # */
+/* ##################################################################### */
+
+html {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+body {
+    position: absolute;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+}
+
+.avoid-clicks {
+    pointer-events: none;
+}
+
+.no-selectable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.outlined {
+    border: .5px solid rgba(0,0,0,.3);
+}
+
+.ui-scrolleable {
+    overflow-y: auto;
+}
+
+.ui-sticky {
+    position: sticky; 
+}
+
+.ui-fixed {
+    position: fixed;
+}
+
+.ui-full-width {
+    width: 100vw;
+}
+
+.ui-full-height {
+    height: 100vh;
+}
+
+.ui-under-header {
+    margin-top:64px;
+}
+
+.ui-row {
+    display: inline-block;
+}
+.ui-no-margins {
+    margin: 0;
+}
+
+.ui-no-paddings {
+    padding:0;
+}
+
+.ui-inline-block {
+    display:inline-block;
+}
+
+.ui-block {
+    float: left;
+}
+
+.ui-side-block {
+    width: 64px;
+}
+
+.ui-constrain-block {
+    min-width: 64px;
+    min-height: 64px;
+}
+
+.ui-middle-block {
+    width: calc(100vw - 128px);
+}
+
+.ui-center-block {
+    height: calc(100vh - 64px);
+}
+
+.ui-top-block {
+    top: 0px;
+    height: 64px;
+}
+
+.ui-bottom-block {
+    bottom: 0px;
+    height: 64px;
+}
+
+.ui-container {
+    padding:10px;
+}
+
+.ui-rounded {
+    border-radius:48px;
+}
+
+.ui-branding {
+    height: 64px;
+}
+
+.ui-fab-button {
+    width:48px;
+    height:48px;
+    padding:5px;
+    border-radius:24px;
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ui-featured-button {
+    width:64px;
+    height:64px;
+    padding:5px;
+    border-radius:32px;
+}
+
+.ui-featured-target {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(89, 255, 0, 0.52);
+    bottom: -250px;
+    left: -150px;
+    border-radius: 400px;
+}
+
+.ui-cast-shadow {
+    box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ui-vertical-spacer {
+    height:48px;
+}
+
+.ui-rounded-button {
+    height: 3em;
+    padding: .5em 2em;
+    border-radius: 2em;
+}
+
+.ui-splitter {
+    width: 60%;
+    text-align: center;
+    padding-top: 48px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    margin-bottom: 48px;
+}
+
+.ui-elipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#ui-featured-description {
+    width:220px;
+}
+
+/* ######################### VISIBILITY CONTROL FOR DEVICES ######################### */
+
+@media (min-width:900px) {
+    .ui-show-on-mobile {
+        display:block;
+    }
+
+    .ui-hide-on-desktop {
+        display:none;
+    }
+}
+
+@media (max-width:900px) {
+    .ui-hide-on-mobile {
+        display:none;
+    }
+
+    html {
+        font-size: .8em;
+    }
+    h1{
+        font-size:1.8em;
+    }
+    h2 {
+        font-size:1.6em;
+    }
+    h3 {
+        font-size:1.4em;
+    }
+    h4 {
+        font-size:1.2em;
+    }
+    h5 {
+        font-size:1em;
+    }
+}
+
+@media (max-height:400px) {
+    .ui-hide-on-smallest {
+        display:none;
+    }
+}
+
+@media (max-width:400px) {
+    .ui-hide-on-thin {
+        display:none;
+    }
+
+    .ui-expandable-on-thin {
+        width: 100vw;
+    }
+
+    #ui-featured-description {
+        width: calc(100vw - 200px);
+    }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="”Content-Language”" content="”es”"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Emprty responsive template">
+        <meta name="author" content="Jorge_Rodríguez">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="./assets/css/ui.css" rel="stylesheet">
+        <link href="./assets/css/anim.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="page-container" class="row ui-fill-width ui-full-height ui-no-margins ui-no-paddings no-selectable" data-pg-name="PAGE CONTAINER">
+            <div id="page-header" class="ui-block row ui-no-margins ui-no-paddings ui-top-block ui-fixed ui-fixed ui-full-width ui-constrain-block" data-pg-name="HEADER" style="z-index: 9999; left: 0; top: 0; align-items: center;">
+                <div class="ui-block ui-col ui-side-block ui-constrain-block outlined" style="background-color: rgba(187, 0, 255, 0.53);"> 
+</div>
+                <div class="col outlined ui-block ui-constrain-block ui-no-paddings ui-no-margins" style="background-color: rgba(222, 131, 255, 0.53);">
+                    <div class="row ui-no-margins ui-no-paddings">
+                        <div class="col-lg-4 col-md-4 col-xl-4 ui-branding ui-constrain-block ui-no-margins ui-no-paddings outlined" style="background-color: rgba(255, 201, 0, 0.48);" data-pg-name="BRANDING">
+                            <p class="ui-constrain-block ui-elipsis" style="font-size:30px; padding: 8px 20px;">Branding</p> 
+                        </div>
+                    </div>                     
+                </div>
+                <div class="ui-block ui-col ui-side-block ui-constrain-block outlined" style="background-color: rgba(187, 0, 255, 0.53);"> 
+</div>
+            </div>
+            <a id="home-button" class="ui-constrain-block ui-fixed" tittle="Toogle menu button" data-pg-name="HOME BUTTON" style="top: 0; left: 0; z-index: 99999; text-align: center;"><div class="d-flex ui-fab-button outlined" onclick="doAction('homeButton');" style="background-color: #ffffff; z-index: 999999;">Logo</div></a>
+            <a id="toggle-button" class="ui-constrain-block ui-hide-on-desktop" tittle="Toogle menu button" data-pg-name="TOGGLE BUTTON" style="text-align: center;"><div class="d-flex ui-fab-button ui-fixed init-transparent anim-fade-in anim-delay-0_5s anim-duration-fast anim-forwards outlined" onclick="toggleMenu(); doAction('toggleMenu');" style="background-color: #ffffff; z-index: 999999; top: 0; right: 0;">Menu</div></a>
+            <div id="mobile-menu" class="row ui-full-height ui-no-marings ui-no-paddings ui-fixed init-moved-left anim-slide-left-in anim-duration-fast anim-forwards init-invisible ui-hide-on-desktop" style="width: 110vw; left: 0; top: 0; z-index: 99999;" onclick="toggleMenu(); doAction('toggleMenu');" data-pg-name="MOBILE MENU">
+                <div class="row ui-full-height ui-no-margins ui-no-paddings ui-cast-shadow outlined" style="width: calc(100vw - 48px); background-color: #ffffff;">
+                    <div class="row ui-full-width ui-no-margins ui-no-paddings" style="height:64px">
+                        <div class="col-12 outlined ui-branding ui-constrain-block ui-no-margins ui-no-paddings" style="background-color: rgba(255, 201, 0, 0.48);" data-pg-name="MENU HEADER">
+                            <p class="ui-constrain-block ui-elipsis" style="font-size: 30px; padding: 8px 20px; text-align: center;">Branding</p> 
+                        </div>
+                    </div>
+                    <div class="row ui-full-width ui-no-margins ui-no-paddings">
+                        <div class="col-12 ui-branding ui-no-margins ui-no-paddings" style="height: calc(100vh - 88px); overflow-y: auto;" data-pg-name="MENU CONTENT">
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12"><h3 class="ui-elipsis" style="text-align: center;margin-top:-1em;">Option label</h3></a>
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a>
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a>
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a>
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a>
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a>
+                            <hr class="ui-hide-on-smallest">
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12 text-secondary"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a>
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12 text-secondary"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a>
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12 text-secondary"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a>
+                            <a onclik="doAction('menuOption')" data-pg-name="menu item" class="col-12 text-secondary"><h3 class="ui-elipsis" style="text-align: center;">Option label</h3></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex ui-featured-button ui-fixed ui-cast-shadow anim-delay-0_5s anim-duration-normal anim-fade-in init-transparent anim-forwards" style="background-color: #ffffff; bottom: 10px; z-index: 9999; left: 10px;" onclick="featuredToggle(); doAction('toggleFeatured');" data-pg-name="FEATURED-BUTTON">
+                <div class="d-flex ui-fab-button" style="position: relative; left: -4; top: -4px;">
+                    FEAT
+</div>
+                <div id="featured-button-pulse" class="ui-constrain-block ui-no-margins ui-no-paddings anim-pulse" style="margin-left: 0; margin-top: 0; position: relative; left: -64px; top: -6px;"></div>
+            </div>
+            <div id="featured-target" class="ui-featured-target ui-fixed ui-cast-shadow anim-duration-fast anim-pop-in init-invisible anim-forwards" style="z-index: 9990;" data-pg-name="FEAUTRED TARGET">
+                <div class="row ui-no-margins ui-no-paddings" style="z-index: 9;">
+                    <div class="col-6 ui-no-paddings" style="height: 250px">
+                        <div class="row ui-no-margins ui-no-paddings" data-pg-name="Tabs Group" style="justify-content: flex-end; width: 64px; position: absolute; right: 24px; bottom: 86px; background-color: rgba(254, 255, 0, 0.52);">
+                            <div id="featured-button-1" class="col-auto ui-constrain-block ui-no-margins ui-no-paddings init-moved-down anim-up-in anim-delay-0_5s anim-duration-normal anim-forwards" data-pg-name="Fab-button">
+                                <a onclick="doAction('actionName')" tittle="Tab button"><div class="ui-fab-button init-zero-scale anim-delay-1s anim-pop-in anim-duration-fast anim-forwards outlined" onclick="featuredToggle()" style="background-color: #666666;"></div></a>
+                            </div>
+                            <div id="featured-button-2" class="col-auto ui-constrain-block ui-no-margins ui-no-paddings init-moved-down anim-up-in anim-delay-0_5s anim-duration-fast anim-forwards" data-pg-name="Fab-button">
+                                <a href="#" onclick="doAction('actionName')" tittle="Tab button"><div class="ui-fab-button init-zero-scale anim-delay-0_5s anim-pop-in anim-duration-fast anim-forwards outlined" style="background-color: #ffffff;"></div></a>
+                            </div>
+                            <div id="featured-button-3" class="col-auto ui-constrain-block ui-no-margins ui-no-paddings ui-hide-on-smallest init-moved-down anim-up-in anim-duration-fast anim-forwards" data-pg-name="Fab-button">
+                                <a href="#" onclick="doAction('actionName')" tittle="Tab button"><div class="ui-fab-button init-zero-scale anim-pop-in anim-duration-fast anim-forwards outlined" style="background-color: #fec4c4;"></div></a>
+                            </div>
+                        </div>                         
+                    </div>
+                    <div class="col-6 ui-no-paddings" style="height: 250px">
+                        <div class="ui-fixed outlined" style="height: 178px; margin-top: 70px; background-color: rgba(0, 171, 255, 0.41);" data-pg-name="FEATURED CONTENT">
+                            <div class="ui-constrain-block ui-hide-on-desktop ui-hide-on-thin"></div>
+                            <div id="ui-featured-title" class="row ui-no-margins" style="width: 178px;">
+                                <div class="col-md-auto ui-no-paddings">
+                                    <h4>Featured title</h4> 
+                                </div>
+                            </div>
+                            <div id="ui-featured-description" class="row ui-no-margins">
+                                <div class="col-md-auto ui-no-paddings"> 
+                                    <p clas="ui-elipsis">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id elit.</p> 
+                                </div>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>
+            </div>
+            <div id="gradient-layer" class="row ui-fixed ui-full-width ui-full-height ui-no-margins ui-no-paddings outlined anim-duration-fast anim-fade-in init-invisible anim-forwards" style="z-index: 999; background-image: linear-gradient(0deg, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .8) 30%, rgba(0, 0, 0, .6) 100%); bottom: 0; left: 0;" onclick="featuredToggle(); doAction('toggleFeatured');" data-pg-name="Gradient layer"></div>
+            <div class="col-1 col-lg-auto col-md-1 col-sm-1 col-xl-auto outlined ui-constrain-block ui-no-margins ui-no-paddings ui-hide-on-thin" style="background-color: rgba(255, 228, 0, 0.51); position: fixed; bottom: 0; right: 0; z-index: 9999;" data-pg-name="TABS MENU">
+                <div class="row ui-no-margins ui-no-paddings" data-pg-name="Tabs Group" style="justify-content: flex-end;">
+                    <div id="tab-button-3" class="col-auto ui-hide-on-smallest ui-constrain-block ui-no-margins ui-no-paddings" data-pg-name="Fab-button">
+                        <a href="#" onclick="doAction('actionName')" tittle="Tab button"><div class="d-flex anim-duration-fast anim-forwards anim-pop-in init-zero-scale outlined text-body ui-fab-button" onclick="doAction('tabAction')" style="background-color: #fec4c4;">Opc1</div></a>
+                    </div>
+                    <div id="tab-button-4" class="col-auto ui-constrain-block ui-no-margins ui-no-paddings ui-hide-on-smallest" data-pg-name="Fab-button">
+                        <a href="#" onclick="doAction('actionName')" tittle="Tab button"><div class="anim-delay-0_5s anim-duration-fast anim-forwards anim-pop-in d-flex init-zero-scale outlined text-body ui-fab-button" onclick="doAction('tabAction')" style="background-color: #fec4c4;">Opc2</div></a>
+                    </div>
+                    <div id="tab-button-1" class="col-auto ui-constrain-block ui-no-margins ui-no-paddings" data-pg-name="Fab-button">
+                        <a href="#" onclick="doAction('actionName')" tittle="Tab button"><div class="anim-delay-1s anim-duration-fast anim-forwards anim-pop-in d-flex init-zero-scale outlined text-body ui-fab-button" onclick="doAction('tabAction')" style="background-color: #ffffff;">Tab1</div></a>
+                    </div>
+                    <div id="tab-button-2" class="col-auto ui-constrain-block ui-no-margins ui-no-paddings" data-pg-name="Fab-button">
+                        <a href="#" onclick="doAction('actionName')" tittle="Tab button"><div class="anim-delay-1s anim-duration-fast anim-forwards anim-pop-in d-flex init-zero-scale outlined text-body ui-fab-button" onclick="doAction('tabAction')" style="background-color: #ffffff;">Tab2</div></a>
+                    </div>
+                    <div id="tab-button-5" class="col-auto ui-constrain-block ui-no-margins ui-no-paddings" data-pg-name="Fab-button">
+                        <a href="#" onclick="doAction('actionName')" tittle="Tab button"><div class="anim-delay-0_5s anim-duration-fast anim-forwards anim-pop-in d-flex init-zero-scale outlined text-body ui-fab-button" onclick="doAction('tabAction')" style="background-color: #ffffff;">Tab3</div></a>
+                    </div>
+                    <div id="tab-button-6" class="col-auto ui-constrain-block ui-no-margins ui-no-paddings" data-pg-name="Fab-button">
+                        <a href="#" onclick="doAction('actionName')" tittle="Tab button"><div class="anim-duration-fast anim-forwards anim-pop-in d-flex init-zero-scale outlined text-body ui-fab-button" onclick="doAction('tabAction')" style="background-color: #ffffff;">Tab4</div></a>
+                    </div>
+                </div>
+            </div>
+            <div id="sides" class="ui-block ui-row ui-center-block ui-full-width ui-constrain-block ui-under-top ui-fixed ui-hide-on-thin" data-pg-name="SIDES" style="z-index: 99;">
+                <div class="ui-block ui-col ui-side-block ui-center-block ui-constrain-block outlined" style="background-color: rgba(255, 0, 0, 0.42);"> 
+</div>
+                <div class="ui-block ui-col ui-middle-block ui-center-block ui-constrain-block ui-expandable-on-thin outlined"> 
+</div>
+                <div class="ui-block ui-col ui-side-block ui-center-block ui-constrain-block outlined" style="background-color: rgba(255, 0, 0, 0.42);"> 
+</div>
+            </div>
+            <div id="main-content" class="ui-block ui-scrolleable ui-no-margins ui-no-paddings ui-full-width ui-constrain-block init-transparent anim-fade-in anim-duration-normal anim-forwards" data-pg-name="MAIN-CONTENT" style="z-index: 9;">
+                <div class="ui-block ui-col ui-side-block ui-full-height ui-constrain-block ui-hide-on-thin"> 
+</div>
+                <div class="ui-block ui-col ui-middle-block ui-constrain-block ui-expandable-on-thin init-moved-down anim-up-in anim-duration-normal anim-forwards" data-pg-name="CONTAINER">
+                    <div class="ui-container">
+                        <div class="ui-constrain-block ui-hide-on-mobile"></div>
+                        <div class="init-moved-up anim-down-in anim-duration-normal anim-forwards">
+                            <div class="row ui-no-margins ui-no-paddings outlined anim-duration-fast anim-zoom-out" style="height: 210px; background-color: rgba(0, 0, 0, 0.53); align-items: center;" data-pg-name="BANNER">
+                                <div style="text-align: center;" class="col-auto col-lg-auto col-md-1 col-sm-auto col-xl-auto"> 
+</div>
+                                <div style="text-align: center;" class="col-12 col-lg-6 col-md-12 col-sm-12 col-xl-5 init-transparent anim-delay-0_5s anim-fade-in anim-duration-fast anim-forwards">
+                                    <h1 class="text-white ui-elipsis anim-slide-in-ltr anim-duration-normal anim-forwards">Banner title</h1>
+                                    <h3 class="font-weight-lighter text-light ui-elipsis anim-slide-in-rtl anim-duration-normal anim-forwards">Banner headline text</h3>
+                                    <button type="button" class="btn btn-primary ui-rounded-button ui-hide-on-thin init-transparent anim-delay-1s anim-fade-in anim-duration-fast anim-forwards" style="text-transform: uppercase; margin: 20px;">
+                                        <span class="ui-elipsis">Call to action</span>
+                                    </button>
+                                </div>
+                                <div style="text-align: center;" class="col-auto col-lg-7 col-md-6 col-sm-auto col-xl-8"> 
+</div>
+                            </div>
+                        </div>
+                        <div class="ui-vertical-spacer"></div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <h1>Main Content title</h1>
+                                <h5 style="text-align: center;">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor  id elit</h5> 
+                            </div>
+                        </div>
+                        <div class="ui-splitter"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Column title</h3> 
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Column title</h3> 
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
+                            </div>
+                        </div>
+                        <div class="ui-vertical-spacer"></div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;"> 
+                                <h1>Section title </h1> 
+                            </div>
+                        </div>
+                        <div class="ui-vertical-spacer"></div>
+                        <div class="row">
+                            <div class="col-12 col-md-3 col-sm-6">
+                                <h3>Column title</h3> 
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
+                            </div>
+                            <div class="col-12 col-md-3 col-sm-6">
+                                <h3>Column title</h3> 
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
+                            </div>
+                            <div class="col-12 col-md-3 col-sm-6">
+                                <h3>Column title</h3> 
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
+                            </div>
+                            <div class="col-12 col-md-3 col-sm-6">
+                                <h3>Column title</h3> 
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
+                            </div>
+                        </div>
+                        <div class="ui-splitter"></div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <h1>Grid Content title</h1>
+                                <h5 style="text-align: center;">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor  id elit</h5>
+                                <div class="row" style="justify-content: space-evenly; padding: 20px;" data-pg-name="GRID">
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                    <div class="col-3 col-lg-2 col-md-2 col-sm-2 col-xl-1 outlined" style="height: 3em; background-color: rgba(65, 95, 188, 0.58); margin: 10px; min-width: 8em;"> 
+</div>
+                                </div>                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-block ui-col ui-side-block ui-full-height ui-constrain-block ui-hide-on-thin"> 
+</div>
+            </div>
+            <div id="footer" class="ui-block ui-row ui-bottom-block ui-sticky ui-full-width ui-constrain-block ui-hide-on-thin ui-hide-on-smallest" data-pg-name="FOOTER" style="background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%); z-index: 99;">
+                <div class="ui-block ui-col ui-side-block ui-constrain-block outlined" style="background-color: #c900ff;"> 
+</div>
+                <div class="ui-block ui-col ui-middle-block ui-constrain-block outlined">
+                    <div class="row ui-no-margins ui-no-paddings ui-hide-on-mobile" style="margin-left: 300px; margin-top: 24px;" data-pg-name="FOOTER LINKS">
+                        <div class="col-auto init-transparent anim-fade-in anim-duration-fast anim-forwards">
+                            <a if="footer-link-1" href="#" target="_blank" rel="nofollow noreferrer" title="Open in a new tab" class="text-body">Link label</a>
+                        </div>
+                        <div class="col-auto init-transparent anim-fade-in anim-duration-normal anim-forwards">
+                            <a if="footer-link-1" href="#" target="_blank" rel="nofollow noreferrer" title="Open in a new tab" class="text-body">Link label</a>
+                        </div>
+                        <div class="col-auto init-transparent anim-fade-in anim-duration-double anim-forwards">
+                            <a if="footer-link-1" href="#" target="_blank" rel="nofollow noreferrer" title="Open in a new tab" class="text-body">Link</a>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="ui-block ui-col ui-side-block ui-constrain-block ui-hide-on-thin outlined" style="background-color: #c900ff;"> 
+</div>
+            </div>
+            <div id="page-background" class="ui-block ui-full-width ui-full-height ui-fixed" style="top: 0; left: 0; z-index: -99; background-color: #ffffff;" data-pg-name="BACKGROUND"></div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery-3.5.1.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="./assets/js/ui.js"></script>
+    </body>
+</html>
